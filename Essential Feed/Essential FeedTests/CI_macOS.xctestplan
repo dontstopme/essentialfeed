@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "52922FC0-0EDF-4646-ADFA-03D1901DBAD2",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "threadSanitizerEnabled" : true
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Essential Feed.xcodeproj",
+        "identifier" : "67AE93CF2A923263000BF7D5",
+        "name" : "Essential FeedTests"
+      }
+    }
+  ],
+  "version" : 1
+}
