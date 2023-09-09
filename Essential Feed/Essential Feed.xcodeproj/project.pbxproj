@@ -11,7 +11,7 @@
 		675124022AAB4215003CE886 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675124012AAB4215003CE886 /* FeedItem.swift */; };
 		67AE93CB2A923263000BF7D5 /* Essential_Feed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 67AE93CA2A923263000BF7D5 /* Essential_Feed.docc */; };
 		67AE93D12A923263000BF7D5 /* Essential_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE93C62A923263000BF7D5 /* Essential_Feed.framework */; };
-		67AE93D62A923263000BF7D5 /* Essential_FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE93D52A923263000BF7D5 /* Essential_FeedTests.swift */; };
+		67AE93D62A923263000BF7D5 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE93D52A923263000BF7D5 /* RemoteFeedLoaderTests.swift */; };
 		67AE93D72A923263000BF7D5 /* Essential_Feed.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AE93C92A923263000BF7D5 /* Essential_Feed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		67AE93C92A923263000BF7D5 /* Essential_Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Essential_Feed.h; sourceTree = "<group>"; };
 		67AE93CA2A923263000BF7D5 /* Essential_Feed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Essential_Feed.docc; sourceTree = "<group>"; };
 		67AE93D02A923263000BF7D5 /* Essential FeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Essential FeedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67AE93D52A923263000BF7D5 /* Essential_FeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Essential_FeedTests.swift; sourceTree = "<group>"; };
+		67AE93D52A923263000BF7D5 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		67AE93E02A923393000BF7D5 /* CI_macOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI_macOS.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				67AE93E02A923393000BF7D5 /* CI_macOS.xctestplan */,
-				67AE93D52A923263000BF7D5 /* Essential_FeedTests.swift */,
+				67AE93D52A923263000BF7D5 /* RemoteFeedLoaderTests.swift */,
 			);
 			path = "Essential FeedTests";
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AE93D62A923263000BF7D5 /* Essential_FeedTests.swift in Sources */,
+				67AE93D62A923263000BF7D5 /* RemoteFeedLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
