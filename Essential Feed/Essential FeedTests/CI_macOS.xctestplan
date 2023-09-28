@@ -4,12 +4,13 @@
       "id" : "52922FC0-0EDF-4646-ADFA-03D1901DBAD2",
       "name" : "Test Scheme Action",
       "options" : {
+        "testExecutionOrdering" : "random",
         "threadSanitizerEnabled" : true
       }
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false
+    "testExecutionOrdering" : "random"
   },
   "testTargets" : [
     {
