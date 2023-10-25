@@ -12,5 +12,5 @@ import Foundation
      typealias InsertionCompletion = (Error?) -> Void
 
      func deleteCachedFeed(completion: @escaping DeletionCompletion)
-     func insert(_ items: [FeedItem], timestamp: Date, completion: @escaping InsertionCompletion)
+     func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletion)
  }
