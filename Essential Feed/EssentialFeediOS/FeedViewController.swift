@@ -13,7 +13,9 @@ public protocol FeedImageDataLoaderTask {
 }
 
 public protocol FeedImageDataLoader {
-    func loadImageData(from url: URL) -> FeedImageDataLoaderTask
+    typealias Result = Swift.Result<Data, Error>
+
+    func loadImageData(from url: URL, completion: @escaping (Result) -> Void) -> FeedImageDataLoaderTask
 }
 
 final public class FeedViewController: UITableViewController {
@@ -68,14 +70,38 @@ final public class FeedViewController: UITableViewController {
  		cell.locationContainer.isHidden = (cellModel.location == nil)
  		cell.locationLabel.text = cellModel.location
  		cell.descriptionLabel.text = cellModel.description
+        cell.feedImageView.image = nil
 
-        tasks[indexPath] = imageLoader?.loadImageData(from: cellModel.url)
+        startTask(forRowAt: indexPath, in: cell)
 
  		return cell
  	}
 
     public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
- 		tasks[indexPath]?.cancel()
- 		tasks[indexPath] = nil
+        cancelTask(forRowAt: indexPath)
  	}
+
+    public override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+        if let cell = cell as? FeedImageCell {
+            startTask(forRowAt: indexPath, in: cell)
+        }
+    }
+
+
+    private func cancelTask(forRowAt indexPath: IndexPath) {
+        tasks[indexPath]?.cancel()
+        tasks[indexPath] = nil
+    }
+
+    private func startTask(forRowAt indexPath: IndexPath, in cell: FeedImageCell) {
+        cell.feedImageContainer.startShimmering()
+        let cellModel = tableModel[indexPath.row]
+
+        tasks[indexPath] = imageLoader?.loadImageData(from: cellModel.url) { [weak cell] result in
+            let data = try? result.get()
+             cell?.feedImageView.image = data.map(UIImage.init) ?? nil
+             cell?.feedImageContainer.stopShimmering()
+         }
+    }
 }
