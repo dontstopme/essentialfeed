@@ -401,16 +401,6 @@ private extension FeedViewController {
  	}
 }
 
-private extension UIRefreshControl {
-    func simulatePullToRefresh() {
-        allTargets.forEach { target in
-            actions(forTarget: target, forControlEvent: .valueChanged)?.forEach {
-                (target as NSObject).perform(Selector($0))
-            }
-        }
-    }
-}
-
 private extension FeedViewController {
     func replaceRefreshControlWithFakeRefreshControl() {
         let fake = FakeRefreshControl()
@@ -463,18 +453,4 @@ private extension UIButton {
  			}
  		}
  	}
- }
-
-private class FakeRefreshControl: UIRefreshControl {
-    private var _isRefreshing = false
-
-    override var isRefreshing: Bool { _isRefreshing }
-
-    override func beginRefreshing() {
-         _isRefreshing = true
-    }
-
-    override func endRefreshing() {
-        _isRefreshing = false
-    }
 }
