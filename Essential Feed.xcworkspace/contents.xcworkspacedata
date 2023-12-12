@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Essential Feed/Essential Feed.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Essential Feed/EssentialFeediOS.xctestplan">
+   </FileRef>
 </Workspace>

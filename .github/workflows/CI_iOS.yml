@@ -1,8 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: macos_tests
-
-# Controls when the workflow will run
+name: iOS_tests
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
@@ -20,7 +16,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: macos-13
 
-    timeout-minutes: 10
+    timeout-minutes: 30
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,6 +30,9 @@ jobs:
       - name: Xcode version
         run: /usr/bin/xcodebuild -version
 
-      - name: Run macOS tests
-        run: /usr/bin/xcodebuild test -project "Essential Feed/Essential Feed.xcodeproj" -scheme "CI_macOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk macosx  ONLY_ACTIVE_ARCH=YES -destination "platform=macOS"
+      - name: show schemes
+        run: /usr/bin/xcodebuild  clean build test -project "Essential Feed/Essential Feed.xcodeproj" -list
+
+      - name: Run iOS tests
+        run: /usr/bin/xcodebuild test -project "Essential Feed/Essential Feed.xcodeproj" -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator  ONLY_ACTIVE_ARCH=YES -destination 'platform=iOS Simulator,OS=17.0.1,name=iPhone 15'
 
