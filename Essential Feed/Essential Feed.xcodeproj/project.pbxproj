@@ -233,13 +233,13 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		671A043B2B2876D300FF1345 /* Models */ = {
+		671A043B2B2876D300FF1345 /* FeedPresentation */ = {
 			isa = PBXGroup;
 			children = (
 				671A043C2B28B4F100FF1345 /* FeedViewModel.swift */,
 				671DDE272B29B00700C83492 /* FeedImageViewModel.swift */,
 			);
-			path = Models;
+			path = FeedPresentation;
 			sourceTree = "<group>";
 		};
 		671ACD7A2B1C7BD900BE91F8 /* FeedStoreSpecs */ = {
@@ -420,7 +420,7 @@
 		6775E0652B261A4300572D23 /* Feed UI */ = {
 			isa = PBXGroup;
 			children = (
-				671A043B2B2876D300FF1345 /* Models */,
+				671A043B2B2876D300FF1345 /* FeedPresentation */,
 				6775E06E2B27120100572D23 /* Composers */,
 				6775E05A2B25D76B00572D23 /* Controllers */,
 				6775E05B2B25D77B00572D23 /* Views */,
