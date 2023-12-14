@@ -5,8 +5,8 @@
 //  Created by Zoltan Damo on 13/12/2023.
 //
 
-import Foundation
 import Essential_Feed
+import Foundation
 
 final class FeedImageViewModel<Image> {
     typealias Observer<T> = (T) -> Void
