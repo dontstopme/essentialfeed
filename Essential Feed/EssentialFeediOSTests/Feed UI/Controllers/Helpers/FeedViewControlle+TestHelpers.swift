@@ -11,9 +11,9 @@ import EssentialFeediOS
 extension FeedViewController {
     func simulateAppearance() {
         if !isViewLoaded {
-            loadViewIfNeeded()
-
             replaceRefreshControlWithFakeRefreshControl()
+
+            loadViewIfNeeded()
         }
 
         beginAppearanceTransition(true, animated: false)
@@ -72,15 +72,6 @@ extension FeedViewController {
 
 private extension FeedViewController {
     func replaceRefreshControlWithFakeRefreshControl() {
-        let fake = FakeRefreshControl()
-
-        refreshControl?.allTargets.forEach( { target in
-            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach({
-                action in fake.addTarget(target, action: Selector(action), for: .valueChanged)
-            })
-        })
-
-        refreshControl = fake
-        refreshController?.view = fake
+        refreshController?.refreshInit = FakeRefreshControl.init
     }
 }
