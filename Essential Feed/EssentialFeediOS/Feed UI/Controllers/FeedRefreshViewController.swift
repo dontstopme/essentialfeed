@@ -7,19 +7,23 @@
 
 import UIKit
 
+protocol FeedRefreshViewControllerDelegate {
+    func didRequestFeedRefresh()
+}
+
 public final class FeedRefreshViewController: NSObject, FeedLoadingView {
    private(set) lazy var view = loadView()
 
-    private let loadFeed: () -> Void
+    private let delegate: FeedRefreshViewControllerDelegate
 
     public var refreshInit: ()->UIRefreshControl = UIRefreshControl.init
 
-    init(loadFeed: @escaping () -> Void) {
-        self.loadFeed = loadFeed
+    init(delegate: FeedRefreshViewControllerDelegate) {
+        self.delegate = delegate
 	}
 
 	@objc func refresh() {
-        loadFeed()
+        self.delegate.didRequestFeedRefresh()
 	}
 
     func display(_ viewModel: FeedLoadingViewModel) {

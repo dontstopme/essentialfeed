@@ -58,10 +58,11 @@
 		6775E06B2B261D8F00572D23 /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775E06A2B261D8F00572D23 /* FeedRefreshViewController.swift */; };
 		6775E06D2B2708F500572D23 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775E06C2B2708F500572D23 /* FeedImageCellController.swift */; };
 		6775E0702B27122100572D23 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775E06F2B27122100572D23 /* FeedUIComposer.swift */; };
+		67818FE02B2C466600572BA3 /* Essential_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE93C62A923263000BF7D5 /* Essential_Feed.framework */; platformFilter = ios; };
+		67818FE32B2C46C600572BA3 /* Essential_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE93C62A923263000BF7D5 /* Essential_Feed.framework */; };
 		67AE93D12A923263000BF7D5 /* Essential_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE93C62A923263000BF7D5 /* Essential_Feed.framework */; };
 		67AE93D62A923263000BF7D5 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE93D52A923263000BF7D5 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		67C78B202B1ED7EF001B7E0F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C78B1F2B1ED7EF001B7E0F /* FeedViewController.swift */; };
-		67C78B222B1EDBF7001B7E0F /* Essential_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AE93C62A923263000BF7D5 /* Essential_Feed.framework */; platformFilter = ios; };
 		67C78B272B1EDDA0001B7E0F /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675124102AC2C4FA003CE886 /* XCTestCase+MemoryLeakTracking.swift */; };
 		67C78B292B22EA95001B7E0F /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C78B282B22EA95001B7E0F /* FeedImageCell.swift */; };
 		67C78B2B2B22FDE9001B7E0F /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C78B2A2B22FDE9001B7E0F /* UIView+Shimmering.swift */; };
@@ -187,7 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C78B222B1EDBF7001B7E0F /* Essential_Feed.framework in Frameworks */,
+				67818FE02B2C466600572BA3 /* Essential_Feed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67673C242B1DC2580042D0AE /* EssentialFeediOS.framework in Frameworks */,
+				67818FE32B2C46C600572BA3 /* Essential_Feed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
