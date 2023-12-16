@@ -11,9 +11,9 @@ import EssentialFeediOS
 extension FeedViewController {
     func simulateAppearance() {
         if !isViewLoaded {
-            replaceRefreshControlWithFakeRefreshControl()
-
             loadViewIfNeeded()
+
+            replaceRefreshControlWithFakeRefreshControl()
         }
 
         beginAppearanceTransition(true, animated: false)
@@ -47,13 +47,16 @@ extension FeedViewController {
          return feedImageView(at: index) as? FeedImageCell
      }
 
-     func simulateFeedImageViewNotVisible(at row: Int) {
-         let view = simulateFeedImageViewVisible(at: row)
+    @discardableResult
+    func simulateFeedImageViewNotVisible(at row: Int) -> FeedImageCell? {
+        let view = simulateFeedImageViewVisible(at: row)
 
-         let delegate = tableView.delegate
-         let index = IndexPath(row: row, section: feedImagesSection)
-         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
-     }
+        let delegate = tableView.delegate
+        let index = IndexPath(row: row, section: feedImagesSection)
+        delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
+
+        return view
+    }
 
     func numberOfRenderedFeedImageViews() -> Int {
          return tableView.numberOfRows(inSection: feedImagesSection)
@@ -72,6 +75,14 @@ extension FeedViewController {
 
 private extension FeedViewController {
     func replaceRefreshControlWithFakeRefreshControl() {
-        refreshController?.refreshInit = FakeRefreshControl.init
+        let fakeRefreshControl = FakeRefreshControl()
+
+        refreshControl?.allTargets.forEach { target in
+            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach { action in
+                fakeRefreshControl.addTarget(target, action: Selector(action), for: .valueChanged)
+            }
+        }
+
+        refreshControl = fakeRefreshControl
     }
 }
