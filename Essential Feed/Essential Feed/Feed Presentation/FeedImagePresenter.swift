@@ -31,13 +31,15 @@ public class FeedImagePresenter<View: FeedImageView, Image> where View.Image == 
     }
 
     public func didFinishLoadingImageData(with data: Data, for model: FeedImage) {
-         view.display(FeedImageViewModel(
-             description: model.description,
-             location: model.location,
-             image: imageTransformer(data),
-             isLoading: false,
-             shouldRetry: true))
-     }
+        let image = imageTransformer(data)
+
+        view.display(FeedImageViewModel(
+            description: model.description,
+            location: model.location,
+            image: image,
+            isLoading: false,
+            shouldRetry: image == nil))
+    }
 
     public func didFinishLoadingImageData(with error: Error, for model: FeedImage) {
         view.display(FeedImageViewModel(
