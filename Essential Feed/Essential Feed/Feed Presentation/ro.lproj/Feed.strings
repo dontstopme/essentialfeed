@@ -7,3 +7,4 @@
 */
 
 "FEED_VIEW_TITLE" = "Fluxul meu";
+"FEED_VIEW_CONNECTION_ERROR" = "Nu s-a putut conecta la server";
