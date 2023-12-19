@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class RemoteFeedImageDataLoader {
+public final class RemoteFeedImageDataLoader: FeedImageDataLoader {
     private let client: HTTPClient
 
     public init(client: HTTPClient) {
@@ -15,6 +15,7 @@ public class RemoteFeedImageDataLoader {
     }
 
     public enum Error: Swift.Error {
+        case connectivity
         case invalidData
     }
 
@@ -54,7 +55,8 @@ public class RemoteFeedImageDataLoader {
                 } else {
                     task.complete(with: .failure(Error.invalidData))
                 }
-            case let .failure(error): task.complete(with: .failure(error))
+            case .failure:
+                task.complete(with: .failure(Error.connectivity))
             }
         }
         return task
