@@ -16,7 +16,7 @@ public final class CoreDataFeedStore {
         case failedToLoadPersistentContainer(Swift.Error)
     }
 
-	public init(storeURL: URL, bundle: Bundle = .main) throws {
+	public init(storeURL: URL) throws {
         guard let model = CoreDataFeedStore.model else {
  			throw StoreError.modelNotFound
  		}
