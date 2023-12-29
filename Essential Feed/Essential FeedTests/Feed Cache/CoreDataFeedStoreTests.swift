@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import Essential_Feed
+import EssentialFeed
 
 class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
 

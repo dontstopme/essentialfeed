@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import Essential_Feed
+import EssentialFeed
 
 final class EssentialFeedAPIEndToEndTests: XCTestCase {
     func test_endToEndTestServerGETFeedResult_matchesFixedTestAccountData() {
