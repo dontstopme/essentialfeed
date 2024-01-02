@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "67AE93C52A923263000BF7D5"
-               BuildableName = "Essential_Feed.framework"
-               BlueprintName = "Essential Feed"
+               BuildableName = "EssentialFeed.framework"
+               BlueprintName = "EssentialFeed"
                ReferencedContainer = "container:Essential Feed.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67AE93C52A923263000BF7D5"
-            BuildableName = "Essential_Feed.framework"
-            BlueprintName = "Essential Feed"
+            BuildableName = "EssentialFeed.framework"
+            BlueprintName = "EssentialFeed"
             ReferencedContainer = "container:Essential Feed.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

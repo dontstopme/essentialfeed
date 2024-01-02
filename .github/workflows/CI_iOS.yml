@@ -34,5 +34,5 @@ jobs:
         run: /usr/bin/xcodebuild  clean build test -project "Essential Feed/Essential Feed.xcodeproj" -list
 
       - name: Run iOS tests
-        run: /usr/bin/xcodebuild test -project "Essential Feed/Essential Feed.xcodeproj" -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator  ONLY_ACTIVE_ARCH=YES -destination 'platform=iOS Simulator,OS=17.0.1,name=iPhone 15'
+        run: /usr/bin/xcodebuild test -workspace "Essential Feed.xcworkspace" -scheme "CI_iOS" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator  ONLY_ACTIVE_ARCH=YES -destination 'platform=iOS Simulator,OS=17.0.1,name=iPhone 15'
 

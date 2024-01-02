@@ -8,7 +8,7 @@
 import Foundation
 
 import XCTest
-import Essential_Feed
+import EssentialFeed
 
 class RemoteFeedImageDataLoaderTests: XCTestCase {
 
