@@ -1,51 +1,58 @@
 {
   "configurations" : [
     {
-      "id" : "C3B9C21D-E27E-42B2-BFE3-F33C48549FEA",
-      "name" : "Configuration 1",
+      "id" : "F02FDF8F-BB52-4573-A6A7-997889BA8E7C",
+      "name" : "Test Scheme Action",
       "options" : {
 
       }
     }
   ],
   "defaultOptions" : {
-    "testExecutionOrdering" : "random",
-    "testTimeoutsEnabled" : true
+
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:Essential Feed.xcodeproj",
+        "containerPath" : "container:EssentialApp\/EssentialApp.xcodeproj",
+        "identifier" : "672222E62B3ED86E009C98AF",
+        "name" : "EssentialAppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Essential Feed\/Essential Feed.xcodeproj",
         "identifier" : "67AE93CF2A923263000BF7D5",
         "name" : "Essential FeedTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Essential Feed.xcodeproj",
+        "containerPath" : "container:Essential Feed\/Essential Feed.xcodeproj",
         "identifier" : "67F513732AC55C6900941E4D",
         "name" : "EssentialFeedAPIEndToEndTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Essential Feed.xcodeproj",
+        "containerPath" : "container:Essential Feed\/Essential Feed.xcodeproj",
         "identifier" : "671ACD982B1CDCA400BE91F8",
         "name" : "EssentialFeedCacheIntegrationTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Essential Feed.xcodeproj",
+        "containerPath" : "container:Essential Feed\/Essential Feed.xcodeproj",
         "identifier" : "67673C222B1DC2580042D0AE",
         "name" : "EssentialFeediOSTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:..\/EssentialApp\/EssentialApp.xcodeproj",
-        "identifier" : "672222E62B3ED86E009C98AF",
-        "name" : "EssentialAppTests"
+        "containerPath" : "container:EssentialApp\/EssentialApp.xcodeproj",
+        "identifier" : "674800222B46F6B500D9D870",
+        "name" : "EssentialAppUIAcceptanceTests"
       }
     }
   ],
