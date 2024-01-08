@@ -22,22 +22,21 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
         didSet { tableView.reloadData() }
     }
 
-    private var onViewIsAppearing: ((FeedViewController?) -> Void)?
+    private var onViewIsAppearing: ((FeedViewController) -> Void)?
 
     public override func viewDidLoad() {
         super.viewDidLoad()
 
         onViewIsAppearing = { feedViewController in
-            feedViewController?.delegate?.didRequestFeedRefresh()
-            feedViewController?.onViewIsAppearing = nil
+            feedViewController.delegate?.didRequestFeedRefresh()
+            feedViewController.onViewIsAppearing = nil
         }
     }
 
     public override func viewIsAppearing(_ animated: Bool) {
         super.viewIsAppearing(animated)
 
-        weak var weakSelf = self
-        onViewIsAppearing?(weakSelf)
+        onViewIsAppearing?(self)
     }
 
     public override func viewDidLayoutSubviews() {
