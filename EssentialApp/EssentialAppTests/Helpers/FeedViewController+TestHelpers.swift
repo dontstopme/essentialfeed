@@ -12,12 +12,20 @@ extension FeedViewController {
     func simulateAppearance() {
         if !isViewLoaded {
             loadViewIfNeeded()
-
-            replaceRefreshControlWithFakeRefreshControl()
+            prepareForFirstAppearance()
         }
 
         beginAppearanceTransition(true, animated: false)
         endAppearanceTransition()
+    }
+    
+    func prepareForFirstAppearance() {
+        setSmallFrameToPreventRenderingCells()
+        replaceRefreshControlWithFakeRefreshControl()
+    }
+
+    private func setSmallFrameToPreventRenderingCells() {
+        tableView.frame = CGRect(x: 0, y: 0, width: 390, height: 1)
     }
 
     func simulateUserInitiatedFeedReload() {
