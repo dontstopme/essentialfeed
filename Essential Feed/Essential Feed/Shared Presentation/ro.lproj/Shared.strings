@@ -1,0 +1,9 @@
+/* 
+  Shared.strings
+  Essential Feed
+
+  Created by Zoltan Damo on 11.01.2024.
+  
+*/
+
+"GENERIC_CONNECTION_ERROR" = "Nu s-a putut conecta la server";
