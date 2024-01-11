@@ -7,4 +7,4 @@
 */
 
 "FEED_VIEW_TITLE" = "Hírfolyam";
-"FEED_VIEW_CONNECTION_ERROR" = "Hiba a történt a szreverhez való kapcsolódáskor";
+"GENERIC_CONNECTION_ERROR" = "Hiba a történt a szreverhez való kapcsolódáskor";
