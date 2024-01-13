@@ -326,6 +326,14 @@
 			path = "Image Comments Presentation";
 			sourceTree = "<group>";
 		};
+		671700D22B5245CB00AEEC6E /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				67F0CC952B4AFCDF001B1883 /* FeedSnapshotTests.swift */,
+			);
+			path = "Feed UI";
+			sourceTree = "<group>";
+		};
 		671ACD7A2B1C7BD900BE91F8 /* FeedStoreSpecs */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,9 +478,8 @@
 		67673C272B1DC2580042D0AE /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				671700D22B5245CB00AEEC6E /* Feed UI */,
 				67F0CC8D2B4AB1C6001B1883 /* Helpers */,
-				67818FFB2B2D744A00572BA3 /* Feed Presentation */,
-				67F0CC952B4AFCDF001B1883 /* FeedSnapshotTests.swift */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -508,13 +515,6 @@
 				6775E05B2B25D77B00572D23 /* Views */,
 			);
 			path = "Feed UI";
-			sourceTree = "<group>";
-		};
-		67818FFB2B2D744A00572BA3 /* Feed Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		6781900B2B2DAC0900572BA3 /* Feed Presentation */ = {
