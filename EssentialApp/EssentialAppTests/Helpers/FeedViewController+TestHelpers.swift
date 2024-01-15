@@ -8,7 +8,7 @@
 import UIKit
 import EssentialFeediOS
 
-extension FeedViewController {
+extension ListViewController {
     func simulateAppearance() {
         if !isViewLoaded {
             loadViewIfNeeded()
@@ -93,7 +93,7 @@ extension FeedViewController {
      }
 }
 
-private extension FeedViewController {
+private extension ListViewController {
     func replaceRefreshControlWithFakeRefreshControl() {
         let fakeRefreshControl = FakeRefreshControl()
 
