@@ -38,6 +38,7 @@
 		671701002B5520B800AEEC6E /* FEED_WITH_CONTENT_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 671700FC2B5520B800AEEC6E /* FEED_WITH_CONTENT_dark.png */; };
 		671701012B5520B800AEEC6E /* FEED_WITH_CONTENT_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 671700FD2B5520B800AEEC6E /* FEED_WITH_CONTENT_light.png */; };
 		671701022B5520B800AEEC6E /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 671700FE2B5520B800AEEC6E /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */; };
+		671701042B55296800AEEC6E /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671701032B55296800AEEC6E /* CellController.swift */; };
 		671ACD7C2B1C7C0C00BE91F8 /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671ACD7B2B1C7C0C00BE91F8 /* FeedStoreSpecs.swift */; };
 		671ACD7E2B1C7D5E00BE91F8 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671ACD7D2B1C7D5E00BE91F8 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */; };
 		671ACD802B1C7DD700BE91F8 /* XCTestCase+FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671ACD7F2B1C7DD700BE91F8 /* XCTestCase+FeedStoreSpecs.swift */; };
@@ -196,6 +197,7 @@
 		671700FC2B5520B800AEEC6E /* FEED_WITH_CONTENT_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_dark.png; sourceTree = "<group>"; };
 		671700FD2B5520B800AEEC6E /* FEED_WITH_CONTENT_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light.png; sourceTree = "<group>"; };
 		671700FE2B5520B800AEEC6E /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_FAILED_IMAGE_LOADING_light.png; sourceTree = "<group>"; };
+		671701032B55296800AEEC6E /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		671ACD7B2B1C7C0C00BE91F8 /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 		671ACD7D2B1C7D5E00BE91F8 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		671ACD7F2B1C7DD700BE91F8 /* XCTestCase+FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedStoreSpecs.swift"; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				67C78B1F2B1ED7EF001B7E0F /* ListViewController.swift */,
+				671701032B55296800AEEC6E /* CellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1095,6 +1098,7 @@
 				67C78B2B2B22FDE9001B7E0F /* UIView+Shimmering.swift in Sources */,
 				67C78B202B1ED7EF001B7E0F /* ListViewController.swift in Sources */,
 				67818FF02B2C7CFA00572BA3 /* UITableView+Dequeueing.swift in Sources */,
+				671701042B55296800AEEC6E /* CellController.swift in Sources */,
 				67818FF12B2C7CFA00572BA3 /* UIImageView+Animations.swift in Sources */,
 				67C78B292B22EA95001B7E0F /* FeedImageCell.swift in Sources */,
 				6775E06D2B2708F500572D23 /* FeedImageCellController.swift in Sources */,
