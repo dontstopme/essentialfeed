@@ -9,7 +9,6 @@ import UIKit
 import EssentialFeed
 
 public class ImageCommentCellController: NSObject, UITableViewDataSource {
-    
     private let model: ImageCommentViewModel
 
     public init(model: ImageCommentViewModel) {
@@ -17,10 +16,10 @@ public class ImageCommentCellController: NSObject, UITableViewDataSource {
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         1
-     }
+        1
+    }
 
-     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ImageCommentCell = tableView.dequeueReusableCell()
         cell.messageLabel.text = model.message
         cell.usernameLabel.text = model.username
