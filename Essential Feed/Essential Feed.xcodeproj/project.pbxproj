@@ -675,9 +675,9 @@
 			children = (
 				671701172B57C5A800AEEC6E /* Helpers */,
 				67C78B282B22EA95001B7E0F /* FeedImageCell.swift */,
+				671701182B57C5D400AEEC6E /* LoadMoreCell.swift */,
 				67818FEA2B2C7BEA00572BA3 /* Feed.xcassets */,
 				67818FEC2B2C7C9700572BA3 /* Feed.storyboard */,
-				671701182B57C5D400AEEC6E /* LoadMoreCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
