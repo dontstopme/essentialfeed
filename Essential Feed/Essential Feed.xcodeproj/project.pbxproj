@@ -47,6 +47,7 @@
 		671701142B56A46800AEEC6E /* ImageCommentsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671701132B56A46800AEEC6E /* ImageCommentsEndpointTests.swift */; };
 		671701162B57C53A00AEEC6E /* LoadMoreCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671701152B57C53A00AEEC6E /* LoadMoreCellController.swift */; };
 		671701192B57C5D400AEEC6E /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671701182B57C5D400AEEC6E /* LoadMoreCell.swift */; };
+		6717011C2B57CD5E00AEEC6E /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6717011B2B57CD5E00AEEC6E /* Paginated.swift */; };
 		671ACD7C2B1C7C0C00BE91F8 /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671ACD7B2B1C7C0C00BE91F8 /* FeedStoreSpecs.swift */; };
 		671ACD7E2B1C7D5E00BE91F8 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671ACD7D2B1C7D5E00BE91F8 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */; };
 		671ACD802B1C7DD700BE91F8 /* XCTestCase+FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671ACD7F2B1C7DD700BE91F8 /* XCTestCase+FeedStoreSpecs.swift */; };
@@ -213,6 +214,7 @@
 		671701132B56A46800AEEC6E /* ImageCommentsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpointTests.swift; sourceTree = "<group>"; };
 		671701152B57C53A00AEEC6E /* LoadMoreCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCellController.swift; sourceTree = "<group>"; };
 		671701182B57C5D400AEEC6E /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
+		6717011B2B57CD5E00AEEC6E /* Paginated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginated.swift; sourceTree = "<group>"; };
 		671ACD7B2B1C7C0C00BE91F8 /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 		671ACD7D2B1C7D5E00BE91F8 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		671ACD7F2B1C7DD700BE91F8 /* XCTestCase+FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedStoreSpecs.swift"; sourceTree = "<group>"; };
@@ -505,6 +507,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		6717011A2B57CD2400AEEC6E /* Shared API */ = {
+			isa = PBXGroup;
+			children = (
+				675124092ABD6D55003CE886 /* HTTPClient.swift */,
+				6717011B2B57CD5E00AEEC6E /* Paginated.swift */,
+			);
+			path = "Shared API";
+			sourceTree = "<group>";
+		};
 		671ACD7A2B1C7BD900BE91F8 /* FeedStoreSpecs */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,6 +747,7 @@
 				675123FE2AAB40DC003CE886 /* Feed Feature */,
 				673D3F372AE2557C00E3F5C3 /* Feed Cache */,
 				67F0CCA42B4E80F8001B1883 /* Shared API Infra */,
+				6717011A2B57CD2400AEEC6E /* Shared API */,
 				675124032AAC524B003CE886 /* Feed API */,
 				67F0CC9F2B4E7CAA001B1883 /* Image Comments API */,
 				67F0CCAE2B4FCE3A001B1883 /* Shared Presentation */,
@@ -790,7 +802,6 @@
 		67F0CCA42B4E80F8001B1883 /* Shared API Infra */ = {
 			isa = PBXGroup;
 			children = (
-				675124092ABD6D55003CE886 /* HTTPClient.swift */,
 				6751240D2AC2C454003CE886 /* URLSessionHTTPClient.swift */,
 			);
 			path = "Shared API Infra";
@@ -1159,6 +1170,7 @@
 				671700C02B50F38300AEEC6E /* ResourceErrorViewModel.swift in Sources */,
 				67F0CCA32B4E80A4001B1883 /* ImageComment.swift in Sources */,
 				671ACD8E2B1C8F7300BE91F8 /* ManagedFeedImage.swift in Sources */,
+				6717011C2B57CD5E00AEEC6E /* Paginated.swift in Sources */,
 				6735265B2B2F2E9D009CDB2A /* FeedImagePresenter.swift in Sources */,
 				6735264E2B2EC825009CDB2A /* FeedPresenter.swift in Sources */,
 				673526532B2ECC0E009CDB2A /* ResourceLoadingViewModel.swift in Sources */,
