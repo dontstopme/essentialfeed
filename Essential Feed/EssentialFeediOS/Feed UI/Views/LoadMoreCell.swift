@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoadMoreCell: UITableViewCell {
+public class LoadMoreCell: UITableViewCell {
     private lazy var spinner: UIActivityIndicatorView = {
          let spinner = UIActivityIndicatorView(style: .medium)
          contentView.addSubview(spinner)
