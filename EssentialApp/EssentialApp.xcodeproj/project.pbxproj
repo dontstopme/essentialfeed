@@ -17,6 +17,7 @@
 		672223082B3EDF7C009C98AF /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 672223052B3EDF7C009C98AF /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		672223092B3EDF7C009C98AF /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672223062B3EDF7C009C98AF /* EssentialFeediOS.framework */; };
 		6722230A2B3EDF7C009C98AF /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 672223062B3EDF7C009C98AF /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67D5E4822B5A5E0E00E386A7 /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5E4812B5A5E0E00E386A7 /* NullStore.swift */; };
 		67F0CC662B481FE7001B1883 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0CC652B481FE7001B1883 /* SceneDelegateTests.swift */; };
 		67F0CC6A2B4823CB001B1883 /* LoadResourcePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0CC692B4823CB001B1883 /* LoadResourcePresentationAdapter.swift */; };
 		67F0CC6C2B4823E0001B1883 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0CC6B2B4823E0001B1883 /* FeedUIComposer.swift */; };
@@ -77,6 +78,7 @@
 		672222E72B3ED86E009C98AF /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672223052B3EDF7C009C98AF /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		672223062B3EDF7C009C98AF /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67D5E4812B5A5E0E00E386A7 /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		67F0CC652B481FE7001B1883 /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegateTests.swift; path = EssentialAppTests/SceneDelegateTests.swift; sourceTree = SOURCE_ROOT; };
 		67F0CC692B4823CB001B1883 /* LoadResourcePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresentationAdapter.swift; sourceTree = "<group>"; };
 		67F0CC6B2B4823E0001B1883 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
@@ -144,11 +146,12 @@
 			children = (
 				672222D42B3ED86B009C98AF /* AppDelegate.swift */,
 				672222D62B3ED86B009C98AF /* SceneDelegate.swift */,
-				67F0CC6D2B4823EE001B1883 /* FeedViewAdapter.swift */,
-				67F0CC692B4823CB001B1883 /* LoadResourcePresentationAdapter.swift */,
+				67D5E4812B5A5E0E00E386A7 /* NullStore.swift */,
+				67F0CC9B2B4D5F05001B1883 /* CombineHelpers.swift */,
 				67F0CC6B2B4823E0001B1883 /* FeedUIComposer.swift */,
 				671701092B56895000AEEC6E /* CommentsUIComposer.swift */,
-				67F0CC9B2B4D5F05001B1883 /* CombineHelpers.swift */,
+				67F0CC6D2B4823EE001B1883 /* FeedViewAdapter.swift */,
+				67F0CC692B4823CB001B1883 /* LoadResourcePresentationAdapter.swift */,
 				67F0CC712B482432001B1883 /* WeakRefVirtualProxy.swift */,
 				672222DD2B3ED86E009C98AF /* Assets.xcassets */,
 				672222DF2B3ED86E009C98AF /* LaunchScreen.storyboard */,
@@ -303,6 +306,7 @@
 				672222D52B3ED86B009C98AF /* AppDelegate.swift in Sources */,
 				67F0CC6A2B4823CB001B1883 /* LoadResourcePresentationAdapter.swift in Sources */,
 				67F0CC6E2B4823EE001B1883 /* FeedViewAdapter.swift in Sources */,
+				67D5E4822B5A5E0E00E386A7 /* NullStore.swift in Sources */,
 				672222D72B3ED86B009C98AF /* SceneDelegate.swift in Sources */,
 				67F0CC722B482432001B1883 /* WeakRefVirtualProxy.swift in Sources */,
 				67F0CC6C2B4823E0001B1883 /* FeedUIComposer.swift in Sources */,
