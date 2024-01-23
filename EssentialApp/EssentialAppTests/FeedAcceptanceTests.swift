@@ -88,7 +88,7 @@ class FeedAcceptanceTests: XCTestCase {
         store: InMemoryFeedStore = .empty
     ) -> ListViewController {
         let sut = SceneDelegate(httpClient: httpClient, store: store, scheduler: .immediateOnMainQueue)
-        sut.window = UIWindow(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
+        sut.window = UIWindow(frame: CGRect(x: 0, y: 0, width: 390, height: 1))
  		sut.configureWindow()
 
  		let navigationController = sut.window?.rootViewController as? UINavigationController
@@ -169,11 +169,11 @@ class FeedAcceptanceTests: XCTestCase {
     }
 
     private func makeLastEmptyFeedPageData() -> Data {
-        return try! JSONSerialization.data(withJSONObject: ["items": []])
+        try! JSONSerialization.data(withJSONObject: ["items": [[String: Any]]()])
     }
 
     private func makeCommentsData() -> Data {
-        return try! JSONSerialization.data(withJSONObject: ["items": [
+        try! JSONSerialization.data(withJSONObject: ["items": [
             [
                 "id": UUID().uuidString,
                 "message": makeCommentMessage(),
@@ -181,7 +181,7 @@ class FeedAcceptanceTests: XCTestCase {
                 "author": [
                     "username": "a username"
                 ]
-            ],
+            ] as [String: Any]
         ]])
     }
 
